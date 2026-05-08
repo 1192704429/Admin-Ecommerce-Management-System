@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.food.api.dao.DishTypeDao">
+
+    <select id="findList" parameterType="com.food.api.dto.DishTypeDTO" resultType="com.food.api.dto.DishTypeDTO">
+        select
+        dishType.*
+        from dish_type dishType
+        <where>
+            <if test="id != null and id != ''">and dishType.id = #{id}</if>
+            <if test="typeName != null and typeName != ''">and dishType.type_name like concat('%',#{typeName},'%')</if>
+            <if test="createTime != null and createTime != ''">and dishType.create_time = #{createTime}</if>
+        </where>
+        <if test="current != null and pageSize != null">
+            limit #{current},#{pageSize}
+        </if>
+    </select>
+
+    <select id="findPageCount" parameterType="com.food.api.dto.DishTypeDTO" resultType="java.lang.Integer">
+        select count(*) from dish_type dishType
+        <where>
+            <if test="id != null and id != ''">and dishType.id = #{id}</if>
+            <if test="typeName != null and typeName != ''">and dishType.type_name like concat('%',#{typeName},'%')</if>
+            <if test="createTime != null and createTime != ''">and dishType.create_time = #{createTime}</if>
+        </where>
+    </select>
+
+</mapper>

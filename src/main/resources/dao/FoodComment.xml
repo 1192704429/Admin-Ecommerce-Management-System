@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.food.api.dao.FoodCommentDao">
+
+    <select id="findList" parameterType="com.food.api.dto.FoodCommentDTO"
+            resultType="com.food.api.dto.FoodCommentDTO">
+        select
+        foodComment.*,
+        foods.dish_name as food_name,
+        foods.dish_img as banner_img,
+        foodUser.nick_name,
+        foodUser.head_img,
+        s.nick_name as nickNameTo,
+        s.head_img as headerImgTo
+        from food_comment foodComment
+        left join dish foods on foodComment.foods_id = foods.id
+        left join users foodUser on foodComment.user_id = foodUser.id
+        left join (select * from users) s on s.id = foodComment.to_user_id
+        <where>
+            <if test="id != null and id != ''">and foodComment.id = #{id}</if>
+            <if test="parentId != null">and foodComment.parent_id = #{parentId}</if>
+            <if test="commentInfo != null and commentInfo != ''">and foodComment.comment_info = #{commentInfo}</if>
+            <if test="userId != null and userId != ''">and foodComment.user_id = #{userId}</if>
+            <if test="foodsId != null and foodsId != ''">and foodComment.foods_id = #{foodsId}</if>
+            <if test="createTime != null and createTime != ''">and foodComment.create_time = #{createTime}</if>
+            <if test="foodName != null and foodName != ''">and foods.dish_name like concat('%',#{foodName},'%')</if>
+            <if test="nickName != null and nickName != ''">and foodUser.nick_name like concat('%',#{nickName},'%')</if>
+            <if test="headImg != null and headImg != ''">and foodUser.head_img = #{headImg}</if>
+        </where>
+        order by create_time desc
+        <if test="current != null and pageSize != null">
+            limit #{current},#{pageSize}
+        </if>
+    </select>
+
+    <select id="findPageCount" parameterType="com.food.api.dto.FoodCommentDTO" resultType="java.lang.Integer">
+        select count(*) from food_comment foodComment
+        left join dish foods on foodComment.foods_id = foods.id
+        left join users foodUser on foodComment.user_id = foodUser.id
+        left join (select * from users) s on s.id = foodComment.to_user_id
+        <where>
+            <if test="id != null and id != ''">and foodComment.id = #{id}</if>
+            <if test="parentId != null">and foodComment.parent_id = #{parentId}</if>
+            <if test="commentInfo != null and commentInfo != ''">and foodComment.comment_info = #{commentInfo}</if>
+            <if test="userId != null and userId != ''">and foodComment.user_id = #{userId}</if>
+            <if test="foodsId != null and foodsId != ''">and foodComment.foods_id = #{foodsId}</if>
+            <if test="createTime != null and createTime != ''">and foodComment.create_time = #{createTime}</if>
+            <if test="foodName != null and foodName != ''">and foods.food_name like concat('%',#{foodName},'%')</if>
+            <if test="nickName != null and nickName != ''">and foodUser.nick_name like concat('%',#{nickName},'%')</if>
+            <if test="headImg != null and headImg != ''">and foodUser.head_img = #{headImg}</if>
+        </where>
+    </select>
+
+</mapper>
