@@ -23,7 +23,7 @@
 | 用户 | 用户端 |
 
 
-![功能模块图](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/azhou_promotion/img/module_structure/func_module_dc2f7508dcb54e93b602fd8bb3743c3e.png)
+![功能模块图](docs/images/01-func-module.png)
 
 
 ## 三、技术栈说明
@@ -55,39 +55,39 @@
 
 登录页：管理员输入账号密码登录电商后台
 
-![登录页：管理员输入账号密码登录电商后台](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/1950e2d2-65d0-46d4-85e5-1feb3c3a124e.png)
+![登录页：管理员输入账号密码登录电商后台](docs/images/02-deng-lu.png)
 
 首页：展示各类粽子销售相关的统计数据
 
-![首页：展示各类粽子销售相关的统计数据](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/c65bf6f2-ffed-45ce-8e32-c55b966a4cec.png)
+![首页：展示各类粽子销售相关的统计数据](docs/images/03-shou-ye.png)
 
 商品管理：修改商品碱水粽的相关信息
 
-![商品管理：修改商品碱水粽的相关信息](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/745c0b56-af73-4197-8b10-2ee07958f29e.png)
+![商品管理：修改商品碱水粽的相关信息](docs/images/04-shang-pin-guan-li.png)
 
 商品管理：管理员对粽子商品信息进行查询和管理操作
 
-![商品管理：管理员对粽子商品信息进行查询和管理操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/c1374cbb-0f39-45fa-88ec-0f722c13e054.png)
+![商品管理：管理员对粽子商品信息进行查询和管理操作](docs/images/05-shang-pin-guan-li.png)
 
 商品分类管理：管理粽子商品分类，支持增删改查操作
 
-![商品分类管理：管理粽子商品分类，支持增删改查操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/7b13ec0b-ed30-4031-8191-2e7eb92170f6.png)
+![商品分类管理：管理粽子商品分类，支持增删改查操作](docs/images/06-shang-pin-fen-lei-guan-li.png)
 
 轮播图管理：管理网站轮播图，支持增删改操作
 
-![轮播图管理：管理网站轮播图，支持增删改操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/f61b9ae8-685b-4ca9-848e-6d18b1023539.png)
+![轮播图管理：管理网站轮播图，支持增删改操作](docs/images/07-lun-bo-tu-guan-li.png)
 
 评价管理页：查看并管理用户提交的粽子商品评价
 
-![评价管理页：查看并管理用户提交的粽子商品评价](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/c9b679c2-6ddb-4d05-8b22-9a11642b6e73.png)
+![评价管理页：查看并管理用户提交的粽子商品评价](docs/images/08-ping-jia-guan-li.png)
 
 公告管理页：管理员对平台系统公告进行查询管理
 
-![公告管理页：管理员对平台系统公告进行查询管理](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/d1af086a-c720-468e-8d1f-54672f3493c4.png)
+![公告管理页：管理员对平台系统公告进行查询管理](docs/images/09-gong-gao-guan-li.png)
 
 订单管理页：查看管理用户订单，支持发货删除等操作
 
-![订单管理页：查看管理用户订单，支持发货删除等操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/9e2a7224-a0e8-4d23-8a2e-a6e688f19cf4.png)
+![订单管理页：查看管理用户订单，支持发货删除等操作](docs/images/10-ding-dan-guan-li.png)
 
 
 ###### 用户端
@@ -112,55 +112,55 @@
 
 注册页：填写信息注册蓝氏粽子电商网站账号
 
-![注册页：填写信息注册蓝氏粽子电商网站账号](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/1a9fdac0-9c72-452c-8059-1ab50496650b.png)
+![注册页：填写信息注册蓝氏粽子电商网站账号](docs/images/11-zhu-ce.png)
 
 登录页：用户输入账号密码，登录粽子电商网站
 
-![登录页：用户输入账号密码，登录粽子电商网站](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/065e1fad-78a4-4ed1-8818-620d9a00afc1.png)
+![登录页：用户输入账号密码，登录粽子电商网站](docs/images/12-deng-lu.png)
 
 首页：展示多款新品粽子，供用户浏览选购
 
-![首页：展示多款新品粽子，供用户浏览选购](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/eb34fb3e-489d-41c2-8bf9-7fe4a3c9eb52.png)
+![首页：展示多款新品粽子，供用户浏览选购](docs/images/13-shou-ye.png)
 
 首页：展示端午活动与新品上市粽子商品
 
-![首页：展示端午活动与新品上市粽子商品](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/3faa101f-b6ad-441a-81d7-53741724d8d1.png)
+![首页：展示端午活动与新品上市粽子商品](docs/images/14-shou-ye.png)
 
 列表页：浏览平台发布的各类系统公告信息
 
-![列表页：浏览平台发布的各类系统公告信息](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/76f63d73-fa30-405e-8956-f305da82d5cf.png)
+![列表页：浏览平台发布的各类系统公告信息](docs/images/15-lie-biao.png)
 
 列表页：展示分类筛选后的粽子商品列表，支持搜索
 
-![列表页：展示分类筛选后的粽子商品列表，支持搜索](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/359d8de5-57fd-4bf6-88d1-c8383e9be722.png)
+![列表页：展示分类筛选后的粽子商品列表，支持搜索](docs/images/16-lie-biao.png)
 
 商品详情页：查看商品详情，浏览并发表用户评论
 
-![商品详情页：查看商品详情，浏览并发表用户评论](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/913a89d2-2a1b-4e90-89ac-041d7e574677.png)
+![商品详情页：查看商品详情，浏览并发表用户评论](docs/images/17-shang-pin-xiang-qing.png)
 
 详情页：展示碱水粽商品信息，可加购和发表评论
 
-![详情页：展示碱水粽商品信息，可加购和发表评论](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/7bbbd16f-5a27-4e67-8cab-4fceb3b722e9.png)
+![详情页：展示碱水粽商品信息，可加购和发表评论](docs/images/18-xiang-qing.png)
 
 购物车：展示购物车商品，调整数量后下单结算
 
-![购物车：展示购物车商品，调整数量后下单结算](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/27630897-55fb-4ecc-836c-2e5906458cd2.png)
+![购物车：展示购物车商品，调整数量后下单结算](docs/images/19-gou-wu-che.png)
 
 沙箱支付页：对商品订单进行支付宝沙箱支付操作
 
-![沙箱支付页：对商品订单进行支付宝沙箱支付操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/7a78da5c-15f3-4c5b-8976-caf3e97349d1.png)
+![沙箱支付页：对商品订单进行支付宝沙箱支付操作](docs/images/20-sha-xiang-zhi-fu.png)
 
 订单管理页：查看个人历史订单，可支付或取消订单
 
-![订单管理页：查看个人历史订单，可支付或取消订单](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/88fb4e63-992f-497d-8f27-d029723a3b75.png)
+![订单管理页：查看个人历史订单，可支付或取消订单](docs/images/21-ding-dan-guan-li.png)
 
 个人中心页：修改个人头像、姓名、联系方式等个人信息
 
-![个人中心页：修改个人头像、姓名、联系方式等个人信息](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/5a445f9e-cf72-44c0-80ca-ad9414e31371.png)
+![个人中心页：修改个人头像、姓名、联系方式等个人信息](docs/images/22-ge-ren-zhong-xin.png)
 
 公告详情页：展示端午节特惠活动公告的详细内容
 
-![公告详情页：展示端午节特惠活动公告的详细内容](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-08/f262a7d1-aa88-4e45-8d1e-2b5ee5c4c1b3.png)
+![公告详情页：展示端午节特惠活动公告的详细内容](docs/images/23-gong-gao-xiang-qing.png)
 
 
 ## 五、主要业务流程
